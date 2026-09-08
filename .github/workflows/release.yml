@@ -1,0 +1,92 @@
+name: Prepare draft macOS release
+on:
+  push:
+    tags: ['v[0-9]*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag matching Cargo.toml (for example v0.2.1)
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            arch: arm64
+          - os: macos-15-intel
+            arch: x86_64
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    steps:
+      - name: Validate tag syntax
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: '[[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]'
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: refs/tags/${{ inputs.tag || github.ref_name }}
+          persist-credentials: false
+      - name: Check release version and tests
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          python3 scripts/release.py check --tag "$RELEASE_TAG"
+          cargo fmt --all -- --check
+          cargo test --locked
+          cargo clippy --locked --all-targets --all-features -- -D warnings
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Build local-signature DMG and checksums
+        id: package
+        env:
+          CAH_REVEAL: '0'
+        run: bash scripts/package-macos.sh --dmg
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: release-${{ matrix.arch }}
+          path: ${{ steps.package.outputs.assets }}/*
+          if-no-files-found: error
+          retention-days: 14
+  draft:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          pattern: release-*
+          path: release-assets
+          merge-multiple: true
+      - name: Verify both architecture downloads
+        working-directory: release-assets
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          for arch in arm64 x86_64; do
+            test -s "Codex-Account-Hub-${RELEASE_TAG#v}-$arch.dmg"
+            test -s "Codex-Account-Hub-${RELEASE_TAG#v}-$arch.dmg.sha256"
+            test -s "DEPENDENCIES-$arch.md"
+            test -s "THIRD_PARTY_NOTICES-$arch.txt"
+          done
+          sha256sum --check --strict ./*.sha256
+      - name: Create a draft only (never auto-publish)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          gh release create "$RELEASE_TAG" --verify-tag --draft --prerelease \
+            --title "Account Hub $RELEASE_TAG — experimental" \
+            --notes 'Experimental macOS builds. Locally signed only: not Developer ID signed or notarized. Review the changelog, dependency license inventory, download checksums, and clean-machine launch tests before publishing. Windows binaries are not included.' \
+            release-assets/*

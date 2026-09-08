@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible problem without credentials or personal data.
+body:
+  - type: markdown
+    attributes:
+      value: Never attach auth.json, tokens, device codes, registries, or private logs. Use synthetic examples and redact screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: App version and macOS version
+    validations:
+      required: true
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Mac architecture
+      options:
+        - Apple Silicon
+        - Intel
+        - Other / unsure
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result, and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: Installation method and sanitized diagnostics

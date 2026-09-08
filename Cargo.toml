@@ -1,0 +1,38 @@
+[package]
+name = "codex-account-hub"
+version = "0.2.1"
+edition = "2021"
+rust-version = "1.88"
+description = "A native tray app for managing Codex accounts"
+license = "MIT"
+build = "build.rs"
+publish = false
+exclude = ["/dist", "/target", "/router-testnet-*.json", "/.env*"]
+
+[package.metadata.release]
+build-number = 6
+
+[features]
+visual-qa = ["eframe/__screenshot"]
+
+[dependencies]
+anyhow = "1.0"
+base64 = "0.22"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+crossbeam-channel = "0.5"
+directories = "6.0"
+eframe = { version = "0.32", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "native-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sysinfo = "0.36"
+thiserror = "2.0"
+tray-icon = "0.21"
+
+[build-dependencies]
+cc = "1.2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

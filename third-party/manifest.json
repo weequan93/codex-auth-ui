@@ -1,0 +1,346 @@
+{
+  "block2@0.5.1": {
+    "commit": "4fc083f1c6d6784577e38b0ee8dbd344481e2fd2",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-4fc083f1c6d6/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/4fc083f1c6d6784577e38b0ee8dbd344481e2fd2/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc-sys@0.3.5": {
+    "commit": "4fc083f1c6d6784577e38b0ee8dbd344481e2fd2",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-4fc083f1c6d6/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/4fc083f1c6d6784577e38b0ee8dbd344481e2fd2/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2@0.5.2": {
+    "commit": "4fc083f1c6d6784577e38b0ee8dbd344481e2fd2",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-4fc083f1c6d6/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/4fc083f1c6d6784577e38b0ee8dbd344481e2fd2/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "block2@0.6.2": {
+    "commit": "b4167b582b2f75f9a1be75495c41b765344fd03c",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-b4167b582b2f/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/b4167b582b2f75f9a1be75495c41b765344fd03c/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "dispatch2@0.3.1": {
+    "commit": "8852b424193ca41602281b3d7540d7c8ed51e49a",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-8852b424193c/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/8852b424193ca41602281b3d7540d7c8ed51e49a/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2@0.6.4": {
+    "commit": "8852b424193ca41602281b3d7540d7c8ed51e49a",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-8852b424193c/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/8852b424193ca41602281b3d7540d7c8ed51e49a/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "ecolor@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "eframe@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "egui@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "egui-wgpu@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "egui-winit@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "egui_glow@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "emath@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "epaint@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "epaint_default_fonts@0.32.3": {
+    "commit": "af96e0373c18477b77236e2bfc89735af007b1c2",
+    "files": [
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/emilk-egui-af96e0373c18/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/emilk/egui/af96e0373c18477b77236e2bfc89735af007b1c2/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "naga@25.0.1": {
+    "commit": "060a779fc5f56560215ea84bda70278cbbd31e72",
+    "files": [
+      {
+        "path": "third-party/gfx-rs-wgpu-060a779fc5f5/LICENSE.APACHE.txt",
+        "source": "https://raw.githubusercontent.com/gfx-rs/wgpu/060a779fc5f56560215ea84bda70278cbbd31e72/LICENSE.APACHE"
+      },
+      {
+        "path": "third-party/gfx-rs-wgpu-060a779fc5f5/LICENSE.MIT.txt",
+        "source": "https://raw.githubusercontent.com/gfx-rs/wgpu/060a779fc5f56560215ea84bda70278cbbd31e72/LICENSE.MIT"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-app-kit@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-core-data@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-core-image@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-foundation@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-metal@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-quartz-core@0.2.2": {
+    "commit": "e282618be4c3a3b9542957e0c8540e9588472ce8",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-e282618be4c3/LICENSE.txt.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/e282618be4c3a3b9542957e0c8540e9588472ce8/LICENSE.txt"
+      }
+    ],
+    "review_required": false
+  },
+  "objc2-app-kit@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-core-foundation@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-core-graphics@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-foundation@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-io-kit@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-io-surface@0.3.2": {
+    "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-7b1abfd750a2/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "objc2-encode@4.1.0": {
+    "commit": "8d214f5477365ffcbcbb7de058c86ed9a518efb7",
+    "files": [
+      {
+        "path": "third-party/madsmtm-objc2-8d214f547736/LICENSE.md.txt",
+        "source": "https://raw.githubusercontent.com/madsmtm/objc2/8d214f5477365ffcbcbb7de058c86ed9a518efb7/LICENSE.md"
+      }
+    ],
+    "review_required": true
+  },
+  "profiling@1.0.18": {
+    "commit": "8271551172eb6fa4cba47369aedd93790c623df9",
+    "files": [
+      {
+        "path": "third-party/aclysma-profiling-8271551172eb/LICENSE-APACHE.txt",
+        "source": "https://raw.githubusercontent.com/aclysma/profiling/8271551172eb6fa4cba47369aedd93790c623df9/LICENSE-APACHE"
+      },
+      {
+        "path": "third-party/aclysma-profiling-8271551172eb/LICENSE-MIT.txt",
+        "source": "https://raw.githubusercontent.com/aclysma/profiling/8271551172eb6fa4cba47369aedd93790c623df9/LICENSE-MIT"
+      }
+    ],
+    "review_required": false
+  }
+}
